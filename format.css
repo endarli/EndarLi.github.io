@@ -1,85 +1,132 @@
+/* top bar */
 .topnav a {
-  color: #83C0AC;
+  color: #5ACAA5;
   text-decoration: none;
   font-size: 17px;
-  font-family:"Helvetica";
-  padding: 15px
+  font-family:"Palatino";
+  margin: 10px 20px 10px 20px;
+  padding:15px 18px 15px 18px;
+  margin-bottom: 25px;
 }
-.fa {
-padding: 20px;
-font-size: 30px;
-text-align: center;
-margin: 5px 2px;
-border-radius: 50%;
+.topnav a:hover {
+  background-color: white;
+  color: #5ACAA5;
 }
-.fa-instagram {
-  background: #83C0AC;
+.topnav a.active {
+  background-color: #5ACAA5;
   color: white;
 }
-p{
-  font-family:"Helvetica";
-  font-size:13px;
-  color:#83C0AC;
-  text-align:center;
+@media screen and (max-width: 652px) {
+  .topnav a {
+    display: block !important;
+  }
 }
-p2{
-  font-family:"Helvetica";
-  font-size:10px;
-  color:#83C0AC;
-  text-align:center;
-}
+/* social media buttons*/
+  .fa {
+    padding: 11px 10px 10px 10px;
+    text-align: center;
+    margin: 5px 2px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
+  .fa:hover {
+    opacity: 0.7;
+    }
+  .fa-instagram {
+    background: #5ACAA5;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-google {
+    background: #4285f4;
+    color: white;
+    text-decoration: none;
+  }
+  .fa-youtube {
+    background: #bb0000;
+    color: white;
+    text-decoration: none;
+  }
+/* body stuff */
 body{
   background-color:#DAFFF3;
   padding: 20px;
 }
-h1{
-  color:#83C0AC;
-  text-align:center;
-  font-family:"Palatino";
-  font-size:75px;
-  margin: 5px;
+.card {
+   background-color:white;
+   padding: 20px;
+   margin-top: 20px;
 }
-h2{
-  color:#83C0AC;
-  text-align:center;
-  font-family:"Palatino";
-  font-weight: bold;
-  font-size:40px;
-  margin-block-start: 35px;
-  margin-block-end: 10px;
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
-h5{
-  color:#83C0AC;
-  text-align:center;
-  font-family:"Helvetica";
-  font-weight: bold;
-  font-size:15px;
-  margin-block-start: 35px;
-  margin-block-end: 10px;
+@media screen and (max-width: 800px) {
+  .leftcolumn{
+    width: 55% !important;
+  }
+  .rightcolumn{
+    width: 45% !important;
+  }
 }
-h3{
-  color:#83C0AC;
-  text-align:center;
-  font-family:"Palatino";
-  font-weight: bold;
-  font-size:20px;
-  margin-block-start: 10px;
-  margin-block-end: 10px;
-}
-hr{
-  border-color:#83C0AC;
-}
-.topnav a:hover {
-  background-color: white;
-  color: #83C0AC;
-}
-.topnav a.active {
-  background-color: #83C0AC;
-  color: white;
-  padding: 15px;
-}
+/* headers */
+  h1{
+    color:#5ACAA5;
+    text-align:center;
+    font-family:"Palatino";
+    font-size:75px;
+    margin: 5px;
+  }
+  h2{ /*subheadings*/
+    color:#5ACAA5;
+    text-align:center;
+    font-family:"Palatino";
+    font-weight: bold;
+    font-size:40px;
+    margin-block-start: 35px;
+    margin-block-end: 10px;
+  }
+  h3{ /*right column*/
+    color:#5ACAA5;
+    text-align:center;
+    font-family:"Palatino";
+    font-weight: bold;
+    font-size:20px;
+    margin-block-start: 10px;
+    margin-block-end: 15px;
+  }
+  h5{ /*dates*/
+    color:#5ACAA5;
+    text-align:center;
+    font-family:"Palatino";
+    font-weight: bold;
+    font-size:15px;
+    margin-block-start: 10px;
+    margin-block-end: 35px;
+  }
+/* paragraphs*/
+  p{
+    font-family:"Helvetica";
+    font-size:15px;
+    color:#83C0AC;
+    text-align:left;
+    width: 70%;
+  }
+  p2{
+    font-family:"Helvetica";
+    font-size:12px;
+    color:#83C0AC;
+    text-align:center;
+  }
 .button {
-  background-color: #83C0AC; /* Green */
+  background-color: #5ACAA5; /* Green */
   border: none;
   color: white;
   padding: 10px;
@@ -90,14 +137,18 @@ hr{
   font-family:"Helvetica";
   width: 70%;
 }
+/* columns */
 .leftcolumn {
   float: left;
-  width: 70%;
+  width: 75%;
+  padding: 20px;
+  padding-top: 0px;
 }
 .rightcolumn {
-  float: left;
-  width: 30%;
-  padding-left: 20px;
+  float: right;
+  width: 25%;
+  padding: 20px;
+  padding-top: 0;
 }
 .column1 {
   float: left;
@@ -115,20 +166,16 @@ hr{
 }
 * {
   box-sizing: border-box;
-}
-.card {
-   background-color:white;
-   padding: 20px;
-   margin-top: 20px;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+} /* for right column */
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+}
+.botlink a {
+  font-family:"Helvetica";
+  font-size:12px;
+  color:#83C0AC;
+  text-align:center;
 }
 /* Lucida Grand */
