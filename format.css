@@ -1,4 +1,4 @@
-/* top bar */
+r/* top bar */
 .topnav a {
   color: #5ACAA5;
   text-decoration: none;
@@ -116,7 +116,7 @@ body{
     font-family:"Helvetica";
     font-size:15px;
     color:#83C0AC;
-    text-align:left;
+    text-align:center;
     width: 70%;
   }
   p2{
