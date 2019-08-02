@@ -3,7 +3,7 @@
   color: #5ACAA5;
   text-decoration: none;
   font-size: 17px;
-  font-family:"Bodoni, Serif";
+  font-family:"Verdana";
   margin: 10px 20px 10px 20px;
   padding:15px 18px 15px 18px;
   margin-bottom: 25px;
@@ -80,7 +80,7 @@ body{
   h1{
     color:#5ACAA5;
     text-align:center;
-    font-family:"Bodoni, Serif";
+    font-family:"Serif, Bodoni";
     font-size:75px;
     margin: 5px;
     text-decoration: none;
@@ -88,7 +88,7 @@ body{
   h2{ /*subheadings*/
     color:#5ACAA5;
     text-align:center;
-    font-family:"Bodoni, Serif";
+    font-family:"Serif, Bodoni";
     font-weight: bold;
     font-size:40px;
     margin-block-start: 35px;
@@ -114,13 +114,14 @@ body{
   }
 /* paragraphs*/
   p{
-    font-family:"Lucida Grande, Sans-serif";
+    font-family:"Verdana";
     font-size:15px;
     color:#83C0AC;
     text-align:center;
+    padding: 0px 20px 0px 20px
   }
   p2{
-    font-family:"Lucida Grande, Sans-serif";
+    font-family:"Verdana";
     font-size:12px;
     color:#83C0AC;
     text-align:center;
@@ -134,7 +135,7 @@ body{
   text-decoration: none;
   display: block;
   font-size: 15px;
-  font-family:"Lucida Grande, Sans-serif";
+  font-family:"Verdana";
   width: 70%;
 }
 .button:hover {
@@ -176,9 +177,8 @@ div.sticky {
   top: 0;
 }
 .botlink a {
-  font-family:"Lucida Grande, Sans-serif";
+  font-family:"Verdana";
   font-size:12px;
   color:#83C0AC;
   text-align:center;
 }
-/* Lucida Grande */
