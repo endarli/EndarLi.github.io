@@ -114,13 +114,13 @@ body{
   }
 /* paragraphs*/
   p{
-    font-family:"Lucida Grand, Sans-serif";
+    font-family:"Lucida Grande, Sans-serif";
     font-size:15px;
     color:#83C0AC;
     text-align:center;
   }
   p2{
-    font-family:"Lucida Grand, Sans-serif";
+    font-family:"Lucida Grande, Sans-serif";
     font-size:12px;
     color:#83C0AC;
     text-align:center;
@@ -134,7 +134,7 @@ body{
   text-decoration: none;
   display: block;
   font-size: 15px;
-  font-family:"Lucida Grand, Sans-serif";
+  font-family:"Lucida Grande, Sans-serif";
   width: 70%;
 }
 .button:hover {
@@ -176,9 +176,9 @@ div.sticky {
   top: 0;
 }
 .botlink a {
-  font-family:"Lucida Grand, Sans-serif";
+  font-family:"Lucida Grande, Sans-serif";
   font-size:12px;
   color:#83C0AC;
   text-align:center;
 }
-/* Lucida Grand */
+/* Lucida Grande */
