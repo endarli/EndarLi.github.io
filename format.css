@@ -3,7 +3,7 @@
   color: #5ACAA5;
   text-decoration: none;
   font-size: 17px;
-  font-family:"Palatino";
+  font-family:"Bodoni, Serif";
   margin: 10px 20px 10px 20px;
   padding:15px 18px 15px 18px;
   margin-bottom: 25px;
@@ -80,14 +80,15 @@ body{
   h1{
     color:#5ACAA5;
     text-align:center;
-    font-family:"Palatino";
+    font-family:"Bodoni, Serif";
     font-size:75px;
     margin: 5px;
+    text-decoration: none;
   }
   h2{ /*subheadings*/
     color:#5ACAA5;
     text-align:center;
-    font-family:"Palatino";
+    font-family:"Bodoni, Serif";
     font-weight: bold;
     font-size:40px;
     margin-block-start: 35px;
@@ -96,7 +97,7 @@ body{
   h3{ /*right column*/
     color:#5ACAA5;
     text-align:center;
-    font-family:"Palatino";
+    font-family:"Bodoni, Serif";
     font-weight: bold;
     font-size:20px;
     margin-block-start: 10px;
@@ -105,7 +106,7 @@ body{
   h5{ /*dates*/
     color:#5ACAA5;
     text-align:center;
-    font-family:"Palatino";
+    font-family:"Bodoni, Serif";
     font-weight: bold;
     font-size:15px;
     margin-block-start: 10px;
@@ -113,13 +114,13 @@ body{
   }
 /* paragraphs*/
   p{
-    font-family:"Helvetica";
+    font-family:"Lucida Grand, Sans-serif";
     font-size:15px;
     color:#83C0AC;
     text-align:center;
   }
   p2{
-    font-family:"Helvetica";
+    font-family:"Lucida Grand, Sans-serif";
     font-size:12px;
     color:#83C0AC;
     text-align:center;
@@ -133,9 +134,12 @@ body{
   text-decoration: none;
   display: block;
   font-size: 15px;
-  font-family:"Helvetica";
+  font-family:"Lucida Grand, Sans-serif";
   width: 70%;
 }
+.button:hover {
+  opacity: 0.7 !important;
+  }
 /* columns */
 .leftcolumn {
   float: left;
@@ -172,7 +176,7 @@ div.sticky {
   top: 0;
 }
 .botlink a {
-  font-family:"Helvetica";
+  font-family:"Lucida Grand, Sans-serif";
   font-size:12px;
   color:#83C0AC;
   text-align:center;
