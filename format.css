@@ -1,6 +1,6 @@
 /* top bar */
 .topnav a {
-  color: #5ACAA5;
+  color: #77bba4;
   text-decoration: none;
   font-size: 17px;
   font-family:"Verdana";
@@ -10,13 +10,14 @@
 }
 .topnav a:hover {
   background-color: white;
-  color: #5ACAA5;
+  color: #77bba4;
+  opacity: .7 !important;
 }
 .topnav a.active {
   background-color: #5ACAA5;
   color: white;
 }
-@media screen and (max-width: 652px) {
+@media screen and (max-width: 692px) {
   .topnav a {
     display: block !important;
   }
@@ -34,7 +35,7 @@
     opacity: 0.7;
     }
   .fa-instagram {
-    background: #5ACAA5;
+    background: #77bba4;
     color: white;
     text-decoration: none;
   }
@@ -78,7 +79,7 @@ body{
 }
 /* headers */
   h1{
-    color:#5ACAA5;
+    color:#77bba4;
     text-align:center;
     font-family:"Serif, Bodoni";
     font-size:75px;
@@ -86,7 +87,7 @@ body{
     text-decoration: none;
   }
   h2{ /*subheadings*/
-    color:#5ACAA5;
+    color:#77bba4;
     text-align:center;
     font-family:"Serif, Bodoni";
     font-weight: bold;
@@ -95,7 +96,7 @@ body{
     margin-block-end: 10px;
   }
   h3{ /*right column*/
-    color:#5ACAA5;
+    color:#77bba4;
     text-align:center;
     font-family:"Bodoni, Serif";
     font-weight: bold;
@@ -103,8 +104,17 @@ body{
     margin-block-start: 10px;
     margin-block-end: 15px;
   }
+  h4{ /*survey*/
+    color:#77bba4;
+    text-align:left;
+    font-family:"Bodoni, Serif";
+    font-weight: bold;
+    font-size:20px;
+    margin-block-start: 10px;
+    margin-block-end: 15px;
+  }
   h5{ /*dates*/
-    color:#5ACAA5;
+    color:#77bba4;
     text-align:center;
     font-family:"Bodoni, Serif";
     font-weight: bold;
@@ -116,14 +126,14 @@ body{
   p{
     font-family:"Verdana";
     font-size:15px;
-    color:#83C0AC;
+    color:#77bba4;
     text-align:center;
     padding: 0px 20px 0px 20px
   }
   p2{
     font-family:"Verdana";
     font-size:12px;
-    color:#83C0AC;
+    color:#77bba4;
     text-align:center;
   }
 .button {
@@ -141,6 +151,63 @@ body{
 .button:hover {
   opacity: 0.7 !important;
   }
+input {
+  padding: 10px;
+  width: 100%;
+  font-size: 17px;
+  font-family: "Verdana";
+  border: 1px solid #77bba4;
+}
+input.invalid {
+  background-color:#FFF0F0;
+}
+/* survey buttons */
+button:hover {
+  opacity: 0.7;
+}
+#prevBtn {
+  background-color: #5ACAA5;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-family:"Verdana";
+  width: 100%;
+}
+#nextBtn {
+  background-color: #5ACAA5;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+  font-family:"Verdana";
+  width: 100%;
+}
+.tab /* hides steps */{
+  display: none;
+}
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #77bba4;
+  border: none;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+}
+.step.active {
+  opacity: 1;
+}
+.step.finish {
+  background-color: #4CAF50;
+}
 /* columns */
 .leftcolumn {
   float: left;
@@ -179,6 +246,6 @@ div.sticky {
 .botlink a {
   font-family:"Verdana";
   font-size:12px;
-  color:#83C0AC;
+  color:#77bba4;
   text-align:center;
 }
