@@ -17,7 +17,9 @@
     <br>
     <br>
     <br>
-    <form id="regForm" action="/action_page.php">
+
+    <!--<form id="regForm" action=<"/action_page.php">-->
+    <form id="regForm" action=<"/Users/endarli/Desktop/GWC/EndarLi.github.io/SurveyDone.html">
   <h2>Register:</h2>
   <!-- One "tab" for each step in the form: -->
   <div class="tab"> <h4>Name:</h4>
@@ -26,7 +28,7 @@
   </div>
   <div class="tab"> <h4>Birthday:</h4>
     <p><input placeholder="DD" oninput="this.className = ''" name="dd"></p>
-    <p><input placeholder="MM" oninput="this.className = ''" name="nn"></p>
+    <p><input placeholder="MM" oninput="this.className = ''" name="mm"></p>
     <p><input placeholder="YYYY" oninput="this.className = ''" name="yyyy"></p>
   </div>
   <div class="tab"> <h4>Favorite Animal:</h4>
@@ -37,12 +39,14 @@
   </div>
 
     <div style="overflow:auto;">
-    <div style="float:right;">
+    <div style="float:left;">
       <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+    </div>
+    <div style="float:right;">
       <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
     </div>
-
     </div>
+
   <!-- Circles which indicates the steps of the form: -->
     <div style="text-align:center;margin-top:40px;">
       <span class="step"></span>
@@ -130,3 +134,22 @@
 </body>
 
 </html>
+
+<!--
+<?php
+  $name = array(
+    document.getElementByTagName("fname").innerHTML = text;
+    document.getElementByTagName("lname").innerHTML = text;);
+  $ddmmyyyy = array(
+    document.getElementByTagName("dd").innerHTML = text;
+    document.getElementByTagName("mm").innerHTML = text;
+    document.getElementByTagName("yyyy").innerHTML = text;);
+  $anim = document.getElementByTagName("anim").innerHTML = text;
+  $food = document.getElementByTagName("food").innerHTML = text;
+
+  print "Your name: " . $name . ".";
+  print "Your birthday: " . $ddmmyyyy . ".";
+  print "Your favorite animal: " . $anim . ".";
+  print "Your favorite food: " . $anim . ".";
+?>
+-->
