@@ -14,7 +14,7 @@
   opacity: .7 !important;
 }
 .topnav a.active {
-  background-color: #5ACAA5;
+  background-color: #78d3b5;
   color: white;
 }
 @media screen and (max-width: 692px) {
@@ -56,7 +56,7 @@
   }
 /* body stuff */
 body{
-  background-color:#DAFFF3;
+  background-color:#cffcee;
   padding: 20px;
 }
 .card {
@@ -118,9 +118,9 @@ body{
     text-align:center;
     font-family:"Bodoni, Serif";
     font-weight: bold;
-    font-size:15px;
-    margin-block-start: 10px;
-    margin-block-end: 35px;
+    font-size:17px;
+    margin-block-start: 15px;
+    margin-block-end: 10px;
   }
 /* paragraphs*/
   p{
@@ -128,7 +128,7 @@ body{
     font-size:15px;
     color:#77bba4;
     text-align:center;
-    padding: 0px 20px 0px 20px
+    padding: 0px 20% 30px 20%;
   }
   p2{
     font-family:"Verdana";
@@ -137,7 +137,7 @@ body{
     text-align:center;
   }
 .button {
-  background-color: #5ACAA5; /* Green */
+  background-color: #78d3b5; /* Green */
   border: none;
   color: white;
   padding: 10px;
@@ -166,7 +166,7 @@ button:hover {
   opacity: 0.7;
 }
 #prevBtn {
-  background-color: #5ACAA5;
+  background-color: #78d3b5;
   border: none;
   color: white;
   padding: 10px;
@@ -178,7 +178,7 @@ button:hover {
   width: 100%;
 }
 #nextBtn {
-  background-color: #5ACAA5;
+  background-color: #78d3b5;
   border: none;
   color: white;
   padding: 10px;
