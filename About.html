@@ -4,6 +4,46 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
   <head>
     <h1>
@@ -14,7 +54,16 @@
   <body>
     <center>
     <div class="topnav">
-      <a href="Home.html">Home</a> <a class="active" href="About.html">About</a> <a href="Life.html">People in My Life</a> <a href="Survey.html">Survey</a>
+      <a href="Home.html">Home</a>
+        <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">About</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="#About">About</a>
+            <a href="#Videos">Videos</a>
+            <a href="#Timeline">Timeline</a>
+          </div>
+          </div>
+      <a href="Life.html">People in My Life</a> <a href="Survey.html">Survey</a>
     </div>
     <br>
     <br>
@@ -22,7 +71,7 @@
 
   <div class="row">
     <div class="leftcolumn">
-    <div class="card">
+    <div class="card" id="About">
       <h2>About</h2>
       <h5>July 30, 2019</h5>
       <img
@@ -32,7 +81,7 @@
     </p>
     </div>
 
-    <div class="card">
+    <div class="card" id="Videos">
       <h2>Videos</h2>
       <h5>Apr 24, 2019</h5>
       <video width=85% controls>
@@ -40,8 +89,7 @@
         Your browser does not support the video tag.
       </video>
       <p>A video I made of the 2019 champs trip on my robotics team</p>
-      <br>
-      <br>
+      <h5>May 8, 2019</h5>
       <video width=85% controls>
         <source src="A snippet of 2.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -50,18 +98,16 @@
       <br>
     </div>
 
-    <div class="card">
+    <div class="card" id="Timeline">
       <h2>Timeline</h2>
       <h5>Jan 24, 2002</h5>
       <img
       src="pics/codeboy.gif" alt="code_boy" width=80%>
       <p>Endar was born.</p>
-      <br>
       <h5>August 20, 2017</h5>
       <img
       src="pics/sign1.JPG" alt="six flags" width=80%>
       <p>Endar and her friends pulled some gangs signs at six flags.</p>
-      <br>
       <h5>Jul 9, 2019</h5>
       <img
       src="pics/shape.PNG" alt="SHAPE" width=80%>
